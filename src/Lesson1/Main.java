@@ -44,6 +44,9 @@ public class Main {
         System.out.println(orBox2.getWeight());
         System.out.println(applBox1.getWeight());
 
+        System.out.println(orBox1.compare(applBox1));
+        System.out.println(orBox2.compare(applBox1));
+
         orBox1.intersperse(orBox2);
 
         System.out.println(orBox1.getWeight());

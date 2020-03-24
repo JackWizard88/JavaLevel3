@@ -21,6 +21,10 @@ public class Box<T extends Fruit> {
         return weight;
     }
 
+    public boolean compare(Box anotherbox) {
+        return getWeight() == anotherbox.getWeight();
+    }
+
     public void intersperse(Box<T> box) {
         box.filling.addAll(filling);
         filling.clear();
